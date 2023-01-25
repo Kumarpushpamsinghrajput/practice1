@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:5500/MOVIES/weather/project2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26th January</title>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('https://thumbs.dreamstime.com/b/illustration-tricolor-india-background-nation-hero-freedom-fighter-like-mahatma-gandhi-bhagat-singh-subhash-chandra-107354579.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+
+    .mid {
+        display: inline;
+        width: 13px;
+        margin: 10px auto;
+
+    }
+
+
+
+    .navbar li {
+        list-style: none;
+        float: left;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 34px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(15, 182, 112);
+    }
+
+    .btn {
+        margin: 0px 5px;
+        background-color: black;
+        color: white;
+        padding: 5px 5px;
+        border: 2px solid violet;
+        border-radius: 3px;
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
+
+    .btn:hover {
+        background-color: rgb(209, 180, 16);
+    }
+
+    .container {
+
+        display: inline;
+        margin: 6px 6px;
+        padding: 2px 2px;
+        width: 900px;
+        border-radius: 2px;
+        text-align: center;
+
+
+
+    }
+
+    .formgroup {
+        text-align: center;
+        margin: 4px;
+        display: inline;
+font-size: 15px;
+border: 6px solid rgb(168, 39, 39);
+
+
+
+
+    }
+</style></head>
+
+
+<body>
+    <header class="header">
+        <div class="left">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/MOVIES/weather/project2.html#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/MOVIES/weather/project2.html#">About India</a></li>
+                <li><a href="http://127.0.0.1:5500/MOVIES/weather/project2.html#">List of freedom fighters</a></li>
+                <li><a href="http://127.0.0.1:5500/MOVIES/weather/project2.html#">History</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <a href="https://google.com/" class="btn">Read more</a>
+            
+        </div>
+    </header>
+    <div class="container">
+        <h1>India at 2050</h1>
+        <form action="http://127.0.0.1:5500/MOVIES/weather/noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your State">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your thoughts">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
